@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.DS_Store
+results/recon_*.csv          # reconstructed text (may derive from credentialed corpora)
+data/mimic_cxr_validate.csv  # MIMIC-CXR requires PhysioNet credentialing — not redistributed
+*.pem

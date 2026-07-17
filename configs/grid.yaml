@@ -1,0 +1,22 @@
+# Full experimental grid: 3 tokenizers x 3 batch sizes x 3 datasets x 5 seeds = 135 runs.
+# Reproduces every quantitative value in the manuscript.
+tokenizers:
+  gpt2: gpt2
+  radbert: StanfordAIMI/SRR-BERT2BERT-RadBERT
+  llama2: meta-llama/Llama-2-7b-hf
+batch_sizes: [64, 128, 256]
+seeds: [0, 1, 2, 3, 4]
+datasets:
+  discharge: dischargesum/discharge_target
+  diagnosis: dischargesum/radiology
+  mimic_cxr: csv:data/mimic_cxr_validate.csv
+output_dir: results/per_run
+attack:
+  num_bins: 1000
+  sequence_length: 32
+  embedding_dim: 96
+  linfunc: randn
+  ridge_epsilon: 1.0e-8
+  breaching_attack: imprint
+  breaching_case: 10_causal_lang_training
+  breaching_server: malicious-model-rtf

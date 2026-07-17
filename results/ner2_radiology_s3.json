@@ -1,0 +1,17 @@
+{
+  "gpt2": {
+    "ref_entities": 149,
+    "recovered": 106,
+    "recall_pct": 71.1
+  },
+  "radbert": {
+    "ref_entities": 149,
+    "recovered": 95,
+    "recall_pct": 63.8
+  },
+  "llama2": {
+    "ref_entities": 138,
+    "recovered": 96,
+    "recall_pct": 69.6
+  }
+}

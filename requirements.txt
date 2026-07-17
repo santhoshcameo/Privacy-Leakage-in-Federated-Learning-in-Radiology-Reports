@@ -1,0 +1,9 @@
+torch>=2.0
+transformers>=4.40
+nltk>=3.8
+numpy>=1.24
+pyyaml>=6.0
+matplotlib>=3.7
+# The analytic imprint attack builds on the `breaching` framework:
+#   https://github.com/JonasGeiping/breaching
+# Install it separately (see README) — it is not on PyPI.

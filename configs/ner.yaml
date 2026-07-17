@@ -1,0 +1,8 @@
+# Clinical named-entity recall configuration (MedGemma).
+model: google/medgemma-4b-it
+batch_size: 32
+max_new_tokens: 96
+# Mechanistic variant: restrict reference entities to those the GPT-2 tokenizer
+# fragments into >= 2 subwords (single-token advantage should be largest there).
+fragmented_subset: true
+fragmentation_tokenizer: gpt2

@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "Privacy Leakage in Federated Learning in Radiology Reports"
+message: "If you use this code, please cite the associated manuscript."
+authors:
+  - family-names: Parampottupadam
+    given-names: Santhosh
+repository-code: "https://github.com/santhoshcameo/Privacy-Leakage-in-Federated-Learning-in-Radiology-Reports"
+license: MIT
